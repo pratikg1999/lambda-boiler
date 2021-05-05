@@ -1,0 +1,32 @@
+{
+  "name": "lambda-boiler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "NODE_ENV=dev node localtest.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.890.0",
+    "axios": "^0.21.1",
+    "graceful-fs": "^4.2.6",
+    "nconf": "^0.11.2"
+  },
+  "devDependencies": {
+    "eslint": "^7.24.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-plugin-import": "^2.16.0",
+    "husky": "^6.0.0",
+    "lint-staged": "^10.5.4"
+  },
+  "_moduleAliases": {
+    "@root": "."
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix"
+  }
+}
